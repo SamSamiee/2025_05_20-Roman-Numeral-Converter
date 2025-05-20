@@ -30,8 +30,9 @@ body {
 
 #main-part {
 	width: 40%;
-	min-width: 300px;
+	max-width: 400px;
 	display: flex;
+	gap: 10px;
 	flex-direction: column;
 	background-color: rgba(255, 255, 255, 0.381);
 	padding: 20px;
@@ -66,7 +67,9 @@ input {
 
 button {
 	height: var(--input-height);
+	min-height: var(--input-height);
 	width: var(--input-height);
+	min-width: var(--input-height);
 	border-radius: var(--input-height);
 	margin-left: calc(var(--input-height) * (-1));
 	border: var(--input-border);
@@ -78,4 +81,18 @@ button {
 #output {
 	font-size: 3rem;
 	color: var(--input-color);
+}
+
+@media screen and (max-width: 371px) {
+	:root {
+		--input-height: 3rem;
+	}
+
+	button {
+		font-size: 10px;
+	}
+
+	#main-part {
+		width: 80vw;
+	}
 }
