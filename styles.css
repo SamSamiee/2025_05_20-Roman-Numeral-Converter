@@ -83,7 +83,7 @@ button {
 	color: var(--input-color);
 }
 
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 650px) {
 	:root {
 		--input-height: 3rem;
 	}
